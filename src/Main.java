@@ -18,6 +18,11 @@ public class Main {
         
         Car companyCar = new Car(150, 30 , 2000, false, "EFG-456",'B',3500, 6000);
         System.out.println("Maksimalna brzina je: " + companyCar.maxSpeed);
+        System.out.println(companyCar.condition);
+        System.out.println(companyCar.currentPrice);
+        System.out.println(companyCar.license);
+        System.out.println(companyCar.minSpeed);
+        System.out.println(companyCar.weight);
         
     }
     
