@@ -1,3 +1,13 @@
+https://www.youtube.com/watch?v=3MZIkY55fS0
+https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/oxygen/3a/eclipse-java-oxygen-3a-win32-x86_64.zip&mirror_id=272
+https://www.linkedin.com/learning/learning-java-by-example
+https://go.java/student-resources/index.html
+https://www.udacity.com/course/java-programming-basics--ud282
+https://www.sololearn.com/Course/Java/
+https://www.codecademy.com/learn/learn-java/
+
+
+
 Git
 Git help
 The Three States
@@ -110,3 +120,13 @@ git blame [file]
 	Show what revision and author last modified each line of a file
 git bisect
 	Use binary search to find the commit that introduced a bug 
+	
+	ali:
+timer
+btooth ili usb dac
+phone 
+holder
+spk+amp
+DOOGEE Case+protect
+
+ssd
