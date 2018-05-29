@@ -16,10 +16,15 @@ public class Car {
     int currentFuel;
     int consumption;
 
+    int currentPassengers;
+    int maxPassengers;
+
     public Car() {
         this.model = "default";
         this.currentFuel = 0;
         this.maxFuel = 100;
+        this.currentPassengers = 1;
+        this.maxPassengers = 5;
     }
 
     public Car(int maxSpeed, int minSpeed, double weight, boolean isTheCarOn,
@@ -40,6 +45,9 @@ public class Car {
         System.out.println("Kapacitet rezervoara je: " + this.maxFuel);
         System.out.println("Trenutno gorivo: " + this.currentFuel);
         System.out.println("Predjena kilometraza: " + this.mileagePassed);
+//        System.out.println("Trenutno putnika: " + this.currentPassengers);
+//        System.out.println("Ukupno putnika: " + this.maxPassengers);
+        System.out.println("Trenutno putnika: " + this.currentPassengers + " ,Maksimalno : " + this.maxPassengers);
         System.out.println();
     }
 
@@ -80,4 +88,41 @@ public class Car {
 
     }
 
+    
+    public void getIn(){ 
+if(this.currentPassengers < this.maxPassengers) {
+    this.currentPassengers = this.currentPassengers + 1;}
+  System.out.println("Usla je jedna osoba, trenutno putnika " );
+  else {System.out.println("Trenutno nema mesta");}
+} 
+
+// da li ima mesta u automobilu
+// ako ima (true)
+//      povecaj za 1
+//  ispisi poruku da je neku usao
+// ako nema mesta ( false)
+// ISPISI poruku da nema mesta
+
+
+this.currentPassengers = this.currentPassengers + 1;
+    }
+
+public void getOut(){
+// da li ima putnika u automobilu
+// ako ima (true)
+//      neka izadje 1
+
+//  ispisi poruku da je neku izasao
+//
+//  
+
+this.currentPassengers = this.currentPassengers - 1}
+
+    
+    
+    
+    
 }
+
+
+
