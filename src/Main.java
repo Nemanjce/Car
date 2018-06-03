@@ -22,25 +22,25 @@ public class Main {
         audi.changeConsumption(20);
         audi.printMainAttributes();
 
-        audi.travel(4);
-        audi.printMainAttributes();
-        audi.getIn();
-        audi.getIn();
-        audi.getIn();
-        audi.getIn();
-        audi.getIn();
-        audi.getIn();
-        audi.getIn();
-        audi.getIn();
-        audi.getIn();
-        audi.printMainAttributes();
+//        audi.travel(4);
+//        audi.printMainAttributes();
+//        audi.getIn();
+//        audi.getIn();
+//        audi.getIn();
+//        audi.getIn();
+//        audi.getIn();
+//        audi.getIn();
+//        audi.getIn();
+//        audi.getIn();
+//        audi.getIn();
+//        audi.printMainAttributes();
 
 //        Car testAuto = new Car();
 //        testAuto.changenumberOfPassengers(2);
-//        testAuto.getIn(50);
-//        testAuto.printMainAttributes();
-//        testAuto.getOut(5);
-//        testAuto.printMainAttributes();
+        testAuto.getIn(50);
+        testAuto.printMainAttributes();
+        testAuto.getOut(5);
+        testAuto.printMainAttributes();
 
     }
 
