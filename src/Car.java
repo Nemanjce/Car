@@ -5,7 +5,6 @@ public class Car {
     int minSpeed = 10;
     double weight = 1000;
     boolean isTheCarOn = false;
-    ;
     String license = "ABC-123";
     char condition = 'A';
     double currentPrice = 3000;
@@ -18,7 +17,6 @@ public class Car {
 
     int currentPassengers;
     int maxPassengers;
-    int numberOfPassengers;
 
     public Car() {
         this.model = "default";
@@ -46,8 +44,6 @@ public class Car {
         System.out.println("Kapacitet rezervoara je: " + this.maxFuel);
         System.out.println("Trenutno gorivo: " + this.currentFuel);
         System.out.println("Predjena kilometraza: " + this.mileagePassed);
-//        System.out.println("Trenutno putnika: " + this.currentPassengers);
-//        System.out.println("Ukupno putnika: " + this.maxPassengers);
         System.out.println("Trenutno putnika: " + this.currentPassengers + " ,Maksimalno : " + this.maxPassengers);
         System.out.println();
     }
@@ -77,10 +73,6 @@ public class Car {
         this.consumption = customConsumption;
     }
 
-    public void changenumberOfPassengers(int changenumberOfPassengers) {
-        this.numberOfPassengers = changenumberOfPassengers;
-    }
-
     public void travel(int distance) {
 
         if (this.currentFuel > distance * this.consumption) {
@@ -93,12 +85,7 @@ public class Car {
     }
 
     public void getIn() {
-// da li ima mesta u automobilu
-// ako ima (true)
-// povecaj za 1
-//  ispisi poruku da je neku usao
-// ako nema mesta ( false)
-// ISPISI poruku da nema mesta
+
         if (this.currentPassengers < this.maxPassengers) {
             this.currentPassengers = this.currentPassengers + 1;
             System.out.println("Usla je jedna ooba, trenutno putnika: " + this.currentPassengers);
@@ -108,11 +95,7 @@ public class Car {
     }
 
     public void getOut() {
-// da li ima putnika u automobilu
-// ako ima (true)
-//      neka izadje 1
-// ako nema (false)
-//  ispisi poruku da je nema vise putnika
+
         if (this.currentPassengers > 0) {
             this.currentPassengers = this.currentPassengers - 1;
             System.out.println("Jedan putnik je izasao, trenutno putnika: " + this.currentPassengers);
@@ -122,23 +105,24 @@ public class Car {
     }
 
     public void getIn(int numberOfPassengers) {
-        if(this.currentPassengers < this.maxPassengers - this.numberOfPassengers) {
-            this.currentPassengers = this.currentPassengers + this.numberOfPassengers;
-            System.out.println("Broj osoba koji je usao, trenutno putnika: " + this.numberOfPassengers);
+        if (this.currentPassengers + numberOfPassengers <= this.maxPassengers) {
+            this.currentPassengers = this.currentPassengers + numberOfPassengers;
+            System.out.println("Uslo " + numberOfPassengers + ", trenutno putnika: " + this.currentPassengers + " \n");
+        } else {
+            System.out.println("Nema mesta za " + numberOfPassengers + " putnika. Slobodnih mesta: " + (this.maxPassengers - this.currentPassengers));
         }
-        System.out.println("Trenutno putnika: " + this.numberOfPassengers + this.currentPassengers);
-//    }else {
-//            System.out.println("Nema vise mesta.");
-//    }
-}
+    }
 
-//    public void getOut(int numberOfPassengers) {
-//        if (this.currentPassengers > 0) {
-//            this.currentPassengers = this.currentPassengers - this.numberOfPassengers;
-//            System.out.println("Broj putnika koji je izasao, trenutno putnika: " + this.currentPassengers);
-//        } else {
-//            System.out.println("Nema vise putnika.");
-//        }
-//    }
+    public void getOut(int numberOfPassengers) {
+        if (this.currentPassengers >= numberOfPassengers) {
+            this.currentPassengers = this.currentPassengers - numberOfPassengers;
+            System.out.println("Izaslo je " + numberOfPassengers + " putnika.Ostalo je " + this.currentPassengers);
+        } else {
+            System.out.println("Nema  " + numberOfPassengers + " putnika u automobilu.");
+        }
+    }
 
+    public void changeMaxPassengers(int newMax) {
+        this.maxPassengers = newMax;
+    }
 }
