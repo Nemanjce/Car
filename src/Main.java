@@ -28,7 +28,6 @@ public class Main {
 //        audi.printMainAttributes();
 //        audi.travel(3);
 //        audi.printMainAttributes();
-
         Car testAuto = new Car();
 //        testAuto.getIn();
 //        testAuto.changeMaxPassengers(9);
@@ -72,13 +71,15 @@ public class Main {
 //        Loops.testDoubleForLoop();
 //        Loops.testMultiplicationTable();
 
-Person p1 = new Person();
-p1.showData();
-p1.setName("Pera");
-p1.setSurname("Peric");
-p1.setJmbg("1234567891123");
-p1.showData();
+        Person p1 = new Person();
+        p1.showData();
+        p1.setName("Pera");
+        p1.setSurname("Peric");
+        p1.setJmbg("1234567777777777891123");
+        p1.showData();
 
+        Person p2 = new Person("Parametarr", "Parametarizovic", "72727277222");
+        p2.showData();
         
     }
 }
