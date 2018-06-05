@@ -1,4 +1,5 @@
 
+import Person.Person;
 import loops.Loops;
 
 public class Main {
@@ -30,25 +31,25 @@ public class Main {
 
         Car testAuto = new Car();
 //        testAuto.getIn();
-        testAuto.changeMaxPassengers(9);
-        testAuto.printMainAttributes();
-        testAuto.getIn(3);
-        testAuto.printMainAttributes();
-        testAuto.getIn(3);
-        testAuto.printMainAttributes();
-        testAuto.getIn();
-        testAuto.printMainAttributes();
-        testAuto.getOut();
-        testAuto.printMainAttributes();
-        testAuto.getOut(2);
-        testAuto.printMainAttributes();
-        testAuto.getOut(2);
-        testAuto.printMainAttributes();
-        testAuto.getOut(2);
-        testAuto.getOut();
-        testAuto.printMainAttributes();
-        testAuto.getOut(2);
-        testAuto.printMainAttributes();
+//        testAuto.changeMaxPassengers(9);
+//        testAuto.printMainAttributes();
+//        testAuto.getIn(3);
+//        testAuto.printMainAttributes();
+//        testAuto.getIn(3);
+//        testAuto.printMainAttributes();
+//        testAuto.getIn();
+//        testAuto.printMainAttributes();
+//        testAuto.getOut();
+//        testAuto.printMainAttributes();
+//        testAuto.getOut(2);
+//        testAuto.printMainAttributes();
+//        testAuto.getOut(2);
+//        testAuto.printMainAttributes();
+//        testAuto.getOut(2);
+//        testAuto.getOut();
+//        testAuto.printMainAttributes();
+//        testAuto.getOut(2);
+//        testAuto.printMainAttributes();
 //  while loop      
 //int x = 4;
 //     
@@ -69,6 +70,15 @@ public class Main {
 //        Loops.testDoWhileLoop();
 //        Loops.testForLoop();
 //        Loops.testDoubleForLoop();
-        Loops.testMultiplicationTable();
+//        Loops.testMultiplicationTable();
+
+Person p1 = new Person();
+p1.showData();
+p1.setName("Pera");
+p1.setSurname("Peric");
+p1.setJmbg("1234567891123");
+p1.showData();
+
+        
     }
 }
