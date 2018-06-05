@@ -1,5 +1,7 @@
 
 import Person.Person;
+import Person.Student;
+import Person.Teacher;
 import loops.Loops;
 
 public class Main {
@@ -28,7 +30,7 @@ public class Main {
 //        audi.printMainAttributes();
 //        audi.travel(3);
 //        audi.printMainAttributes();
-        Car testAuto = new Car();
+//        Car testAuto = new Car();
 //        testAuto.getIn();
 //        testAuto.changeMaxPassengers(9);
 //        testAuto.printMainAttributes();
@@ -73,13 +75,26 @@ public class Main {
 
         Person p1 = new Person();
         p1.showData();
-        p1.setName("Pera");
-        p1.setSurname("Peric");
+        p1.setName("Neparametar");
+        p1.setSurname("Nepar");
         p1.setJmbg("1234567777777777891123");
         p1.showData();
 
         Person p2 = new Person("Parametarr", "Parametarizovic", "72727277222");
         p2.showData();
+        
+        Student studentJovan = new Student("Jovan", "Jovanovic", "3433");
+        studentJovan.serCurrentYear(4);
+        studentJovan.setIndexNumber("gg-sss22");
+        studentJovan.showData();
+        
+        Student studentMarija = new Student("Marija", "Makic    ", "666666", "oas=123", 2);
+        studentMarija.showData();
+        
+        Teacher teacherMil = new Teacher("Mil", "Mill", "kbfvf885");
+        teacherMil.setMainSubject("QA");
+        teacherMil.setTeachinYears(7);
+        teacherMil.showData();
         
     }
 }
