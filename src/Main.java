@@ -1,4 +1,3 @@
-
 import Person.Person;
 import Person.Student;
 import Person.Teacher;
@@ -30,6 +29,7 @@ public class Main {
 //        audi.printMainAttributes();
 //        audi.travel(3);
 //        audi.printMainAttributes();
+
 //        Car testAuto = new Car();
 //        testAuto.getIn();
 //        testAuto.changeMaxPassengers(9);
@@ -51,6 +51,7 @@ public class Main {
 //        testAuto.printMainAttributes();
 //        testAuto.getOut(2);
 //        testAuto.printMainAttributes();
+
 //  while loop      
 //int x = 4;
 //     
@@ -71,6 +72,7 @@ public class Main {
 //        Loops.testDoWhileLoop();
 //        Loops.testForLoop();
 //        Loops.testDoubleForLoop();
+
 //        Loops.testMultiplicationTable();
 
         Person p1 = new Person();
